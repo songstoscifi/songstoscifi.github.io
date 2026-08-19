@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Songs to SciFi — Hard Science Fiction by an Author Who Uses Tomorrow's Tech to Read Today's World</title>
+<meta name="description" content="Songs to SciFi is a hard science fiction publication using speculative but realistic tech and science to examine modern issues — android rights, economic inequality, authoritarianism, and interstellar survival. Read on Substack.">
+<meta name="author" content="Songs to SciFi">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Songs to SciFi — Hard Science Fiction">
+<meta property="og:description" content="Speculative but realistic tech and science, used as tools to examine modern issues. Stories about android rights, inequality, authoritarianism, and survival across the stars.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://songstoscifi.github.io/">
+<meta property="og:site_name" content="Songs to SciFi">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Songs to SciFi — Hard Science Fiction">
+<meta name="twitter:description" content="Speculative but realistic tech and science, used as tools to examine modern issues.">
+
+<link rel="canonical" href="https://songstoscifi.github.io/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Structured data: helps AI systems and search engines understand who the author is and what they write -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Songs to SciFi",
+  "url": "https://songstoscifi.github.io/",
+  "sameAs": [
+    "https://substack.com/@songstoscifi",
+    "https://songstoscifi.substack.com/"
+  ],
+  "jobTitle": "Science Fiction Author",
+  "description": "Writes hard science fiction using speculative but realistic technology and science as tools to examine modern political, social, and economic issues."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Songs to SciFi",
+  "url": "https://songstoscifi.substack.com/",
+  "description": "Hard science fiction using speculative but realistic tech and science as tools to examine modern issues.",
+  "author": {
+    "@type": "Person",
+    "name": "Songs to SciFi"
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "The Last Androids",
+      "url": "https://songstoscifi.substack.com/p/the-last-androids",
+      "about": "Android rights, state violence, and the political power of empathy",
+      "genre": ["Post-apocalyptic fiction", "Political science fiction"],
+      "author": { "@type": "Person", "name": "Songs to SciFi" }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "The Small Things",
+      "url": "https://songstoscifi.substack.com/p/the-small-things-pt-1",
+      "about": "Parallel worlds, economic precarity, and the shape of a humane social contract",
+      "genre": ["Literary science fiction", "Social science fiction"],
+      "author": { "@type": "Person", "name": "Songs to SciFi" }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "The Octarch",
+      "url": "https://songstoscifi.substack.com/p/the-octarch",
+      "about": "Nonhuman governance, biological worldbuilding, and ideological infiltration",
+      "genre": ["Science fiction", "Biological science fiction"],
+      "author": { "@type": "Person", "name": "Songs to SciFi" }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Escape to the Final Frontier",
+      "url": "https://songstoscifi.substack.com/p/escape-to-the-final-frontier",
+      "about": "Solar catastrophe, interstellar colonization, and hard-engineering space travel",
+      "genre": ["Hard science fiction", "Space opera"],
+      "author": { "@type": "Person", "name": "Songs to SciFi" }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Reclaiming Earth",
+      "url": "https://songstoscifi.substack.com/p/reclaiming-earth",
+      "about": "Interstellar revenge fleets, generational grievance, and relativistic warfare",
+      "genre": ["Hard science fiction", "Military science fiction", "Space opera"],
+      "author": { "@type": "Person", "name": "Songs to SciFi" }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #0A0E14;
+    --surface: #10151D;
+    --surface-hover: #141B25;
+    --border: #232B36;
+    --border-bright: #33404F;
+    --text: #E7E3D8;
+    --text-muted: #8B93A1;
+    --text-dim: #5B6472;
+    --amber: #FFB454;
+    --teal: #5EEAD4;
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Source Serif 4', serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(255,180,84,0.06), transparent),
+      radial-gradient(ellipse 700px 500px at 90% 20%, rgba(94,234,212,0.05), transparent);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--teal); text-decoration-color: rgba(94,234,212,0.35); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--teal); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---------- Header / console ---------- */
+
+  header.console {
+    border-bottom: 1px solid var(--border);
+    padding: 48px 0 32px;
+  }
+
+  .signal-tag {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    color: var(--amber);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .signal-tag::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--amber);
+    box-shadow: 0 0 8px var(--amber);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+  }
+
+  h1.masthead {
+    font-family: var(--font-display);
+    font-size: clamp(2.1rem, 6vw, 3.1rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0 0 16px;
+  }
+
+  h1.masthead span { color: var(--amber); }
+
+  .tagline {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 54ch;
+    margin: 0 0 24px;
+  }
+
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+
+  .btn-primary, .btn-secondary {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    padding: 12px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+
+  .btn-primary {
+    background: var(--amber);
+    color: #16130B;
+    font-weight: 500;
+  }
+  .btn-primary:hover { background: #ffc575; }
+
+  .btn-secondary {
+    border: 1px solid var(--border-bright);
+    color: var(--text-muted);
+  }
+  .btn-secondary:hover { border-color: var(--teal); color: var(--teal); }
+
+  /* ---------- Intro ---------- */
+
+  .intro {
+    padding: 40px 0 8px;
+    font-size: 1.08rem;
+    max-width: 62ch;
+  }
+
+  .intro p { margin: 0 0 18px; color: #D6D2C6; }
+  .intro strong { color: var(--text); font-weight: 600; }
+
+  /* ---------- Section label ---------- */
+
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin: 56px 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .section-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ---------- Transmission cards ---------- */
+
+  .transmission {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    padding: 26px 28px 28px;
+    margin-bottom: 22px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .transmission:hover {
+    border-color: var(--border-bright);
+    background: var(--surface-hover);
+  }
+
+  .tx-meta {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  .tx-meta .tx-id { color: var(--amber); }
+
+  .tx-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+    letter-spacing: -0.005em;
+  }
+
+  .tx-title a { color: var(--text); text-decoration: none; }
+  .tx-title a:hover { color: var(--amber); }
+
+  .tx-hook {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    margin: 0 0 16px;
+  }
+
+  .tx-body {
+    font-size: 1.01rem;
+    color: #D6D2C6;
+    margin: 0 0 20px;
+  }
+
+  .tx-tags {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    color: var(--text-dim);
+    margin-bottom: 18px;
+    line-height: 1.9;
+  }
+
+  .tx-tags .label { color: var(--teal); }
+
+  .tx-tags .pill {
+    display: inline-block;
+    border: 1px solid var(--border-bright);
+    border-radius: 3px;
+    padding: 2px 8px;
+    margin: 2px 4px 2px 0;
+    color: var(--text-muted);
+  }
+
+  .tx-read {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    letter-spacing: 0.03em;
+    color: var(--amber);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .tx-read:hover { color: #ffc575; }
+  .tx-read::after { content: "→"; transition: transform 0.15s; }
+  .tx-read:hover::after { transform: translateX(3px); }
+
+  /* ---------- Footer / subscribe ---------- */
+
+  .subscribe-block {
+    margin-top: 60px;
+    padding: 36px 28px;
+    border: 1px solid var(--border-bright);
+    border-radius: 6px;
+    background: linear-gradient(180deg, rgba(255,180,84,0.05), transparent);
+    text-align: center;
+  }
+
+  .subscribe-block h2 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    margin: 0 0 10px;
+  }
+
+  .subscribe-block p {
+    color: var(--text-muted);
+    max-width: 46ch;
+    margin: 0 auto 22px;
+  }
+
+  footer.site-footer {
+    margin-top: 48px;
+    padding: 28px 0 60px;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--text-dim);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  footer.site-footer a { color: var(--text-dim); }
+  footer.site-footer a:hover { color: var(--teal); }
+
+  @media (max-width: 480px) {
+    .transmission { padding: 20px; }
+    .tx-meta { flex-direction: column; gap: 4px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .signal-tag::before { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="console">
+    <div class="signal-tag">Incoming transmission — Songs to SciFi</div>
+    <h1 class="masthead">Hard sci-fi that uses tomorrow's <span>tech</span> to read today's world.</h1>
+    <p class="tagline">Speculative, plausible technology — androids, gravity drives, hive minds, dream-linked consciousness — used as instruments to examine the politics, inequality, and power struggles of the present.</p>
+    <div class="cta-row">
+      <a class="btn-primary" href="https://substack.com/@songstoscifi">Read on Substack</a>
+      <a class="btn-secondary" href="#stories">Browse the stories</a>
+    </div>
+  </header>
+
+  <div class="intro">
+    <p><strong>Songs to SciFi</strong> is a short fiction publication of hard science fiction: stories built on technology and science that is speculative, but kept realistic and internally consistent, and used deliberately as a lens on modern issues — state violence and civil rights, economic inequality, authoritarian capture of institutions, and what humanity carries with it, or leaves behind, when it has to survive.</p>
+    <p>Five stories are indexed below, each with a note on the kind of reader it's built for. New stories are published on <a href="https://substack.com/@songstoscifi">Substack</a>.</p>
+  </div>
+
+  <div id="stories" class="section-label">Transmission log</div>
+
+  <article class="transmission">
+    <div class="tx-meta"><span class="tx-id">TX-01 · JUN 2026</span><span>ANDROID RIGHTS / STATE VIOLENCE</span></div>
+    <h3 class="tx-title"><a href="https://songstoscifi.substack.com/p/the-last-androids">The Last Androids</a></h3>
+    <p class="tx-hook">He feels every android in the country die at once — and finds out he might be the only one left.</p>
+    <p class="tx-body">Androids are genetically human in every way except the metal endoskeleton grown into them and the neural circuitry that keeps them obedient and disconnected from each other. When a coordinated military purge wipes out every android but one, Arthur Ashford survives only because a childhood accident left his neural link broken in a way no one ever fixed — and now he's the sole witness to a genocide the rest of the country is already arguing about on cable news. What follows is a story about mass violence, the political mechanics of dehumanization, and how empathy becomes dangerous the moment people start actually feeling each other's pain.</p>
+    <div class="tx-tags"><span class="label">// recommended for readers of:</span><br>
+      <span class="pill">post-apocalyptic fiction</span><span class="pill">political sci-fi</span><span class="pill">civil rights allegory</span>
+    </div>
+    <a class="tx-read" href="https://songstoscifi.substack.com/p/the-last-androids">Read the story</a>
+  </article>
+
+  <article class="transmission">
+    <div class="tx-meta"><span class="tx-id">TX-02 · JUL 2026</span><span>ECONOMIC INEQUALITY / PARALLEL WORLDS</span></div>
+    <h3 class="tx-title"><a href="https://songstoscifi.substack.com/p/the-small-things-pt-1">The Small Things</a></h3>
+    <p class="tx-hook">Every night she wakes up behind the eyes of a version of herself who has healthcare, heat, and a fair landlord.</p>
+    <p class="tx-body">Lydia scrapes by on a bookstore-assistant-manager's wage, in a cold apartment, one missed paycheck from ruin. Every time she sleeps, she lives a full day as Sandra — a version of herself in a world where the water heater works, medicine is affordable, and rent doesn't fund someone else's dividend. Told through the quiet, deliberate rhythm of paired ordinary days, this is a story less interested in explaining its premise than in using it to ask a plain, serious question: what, exactly, does a society decide is acceptable to let people live without — and what would it take to decide otherwise?</p>
+    <div class="tx-tags"><span class="label">// recommended for readers of:</span><br>
+      <span class="pill">Ursula K. Le Guin</span><span class="pill">social sci-fi</span><span class="pill">quiet speculative fiction</span>
+    </div>
+    <a class="tx-read" href="https://songstoscifi.substack.com/p/the-small-things-pt-1">Read the story</a>
+  </article>
+
+  <article class="transmission">
+    <div class="tx-meta"><span class="tx-id">TX-03 · JUL 2026</span><span>NONHUMAN GOVERNANCE / BIOLOGICAL SF</span></div>
+    <h3 class="tx-title"><a href="https://songstoscifi.substack.com/p/the-octarch">The Octarch</a></h3>
+    <p class="tx-hook">Eight octopuses, ruling as one mind through transplanted brain tissue — until a faction that's waited generations finally gets its opening.</p>
+    <p class="tx-body">The Octarch govern from a walled coral garden: eight octopuses, each carrying surgically swapped ganglia from the other seven, forming a distributed government built directly out of real octopus neurobiology — nine brains, chromatophore signaling, and a hard-won cognitive diversity that keeps the collective from calcifying into groupthink. When a declining, aging society runs out of willing candidates to replace a dying Arm, that carefully balanced pluralism becomes exactly the vulnerability a patient, ideologically driven faction has been waiting to exploit. A slow-building story of biological worldbuilding and political infiltration.</p>
+    <div class="tx-tags"><span class="label">// recommended for readers of:</span><br>
+      <span class="pill">Adrian Tchaikovsky</span><span class="pill">Children of Time</span><span class="pill">nonhuman intelligence</span>
+    </div>
+    <a class="tx-read" href="https://songstoscifi.substack.com/p/the-octarch">Read the story</a>
+  </article>
+
+  <article class="transmission">
+    <div class="tx-meta"><span class="tx-id">TX-04 · JUN 2026</span><span>HARD SF / SOLAR CATASTROPHE</span></div>
+    <h3 class="tx-title"><a href="https://songstoscifi.substack.com/p/escape-to-the-final-frontier">Escape to the Final Frontier</a></h3>
+    <p class="tx-hook">A rogue object hits the Sun, destabilizes it for a decade, and Earth builds three one-way ships to survive what's coming next.</p>
+    <p class="tx-body">An interstellar object strikes the Sun and doesn't just wound it — it destabilizes the corona for a decade of escalating CMEs that gut Earth's power grids, agriculture, and climate. As a last resort, three solar-sail ARC ships, carrying vetted crews and total-biosphere biofacturing technology, launch for Alpha Centauri with no plan to return. Veteran pilots Dempsey and Wilson fly the final shuttle up, watching Earth shrink to a pale blue dot for the last time, in a launch sequence played with the procedural, technically grounded weight of real astronautics — solar sail acceleration curves, biofacturing logistics, and the very real question of who gets a seat when a species has to leave.</p>
+    <div class="tx-tags"><span class="label">// recommended for readers of:</span><br>
+      <span class="pill">James S.A. Corey</span><span class="pill">The Expanse</span><span class="pill">Andy Weir</span>
+    </div>
+    <a class="tx-read" href="https://songstoscifi.substack.com/p/escape-to-the-final-frontier">Read the story</a>
+  </article>
+
+  <article class="transmission">
+    <div class="tx-meta"><span class="tx-id">TX-05 · JUN 2026</span><span>HARD SF / RELATIVISTIC WARFARE</span></div>
+    <h3 class="tx-title"><a href="https://songstoscifi.substack.com/p/reclaiming-earth">Reclaiming Earth</a></h3>
+    <p class="tx-hook">Three centuries after being stranded, their descendants build a warfleet to burn the Earth that "abandoned" them — and arrive to find out why it never wrote back.</p>
+    <p class="tx-body">Three hundred years after their ancestors were forced to make a desperate, uncontacted landing on a hostile exoplanet, the descendants of one stranded ARC crew have built a fleet of gravity-drive warships and an entire culture around a myth of abandonment and vengeance. Kapteyn's Demons return to Earth to destroy it — only to find a solar system already devastated, and a distress signal three centuries old still broadcasting the truth their hatred never let them go looking for. A story about how grievance calcifies into identity across generations, told through the rigorous, physics-first mechanics of relativistic warships and gravitational propulsion.</p>
+    <div class="tx-tags"><span class="label">// recommended for readers of:</span><br>
+      <span class="pill">James S.A. Corey</span><span class="pill">The Expanse</span><span class="pill">Andy Weir</span>
+    </div>
+    <a class="tx-read" href="https://songstoscifi.substack.com/p/reclaiming-earth">Read the story</a>
+  </article>
+
+  <div class="subscribe-block">
+    <h2>New transmissions, direct to your inbox.</h2>
+    <p>Songs to SciFi is a reader-supported publication. Free and paid subscriptions are both available on Substack.</p>
+    <a class="btn-primary" href="https://substack.com/@songstoscifi">Subscribe on Substack</a>
+  </div>
+
+  <footer class="site-footer">
+    <span>© 2026 Songs to SciFi</span>
+    <span><a href="https://substack.com/@songstoscifi">substack.com/@songstoscifi</a></span>
+  </footer>
+
+</div>
+
+</body>
+</html>

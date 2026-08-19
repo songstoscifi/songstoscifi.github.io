@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://songstoscifi.github.io/sitemap.xml
